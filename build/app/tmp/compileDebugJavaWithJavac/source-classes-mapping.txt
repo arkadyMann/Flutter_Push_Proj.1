@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+ru/skillbranch/flutter_push/BuildConfig.java
+ ru.skillbranch.flutter_push.BuildConfig

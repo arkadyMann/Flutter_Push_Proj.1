@@ -1,0 +1,4 @@
+#Thu Jan 06 02:00:13 MSK 2022
+base.0=/Users/arkady/Users/arkady/flutter_push/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
