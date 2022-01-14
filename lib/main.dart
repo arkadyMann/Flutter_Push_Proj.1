@@ -8,9 +8,6 @@ void main() {
   runApp(const MyApp());
 }
 
-
-
-
 extension ColorExtension on String {
   toColor() {
     var hexColor = this.replaceAll("#", "");
@@ -56,9 +53,7 @@ hexColor (String colorhexcode) {
   return colorint;
 }
 
-  Color _buttonColor1 = Colors.green;
-  Color _buttonColor2 = Colors.yellow;
-  Color _buttonColor3 = Colors.red;
+  
 
 
   @override
@@ -94,7 +89,6 @@ hexColor (String colorhexcode) {
                     _startWaitingTimer();
                     break;
                   case GameState.waiting:
-                    _buttonColor2;
                     break;
                   case GameState.canBeStopped:
                     gameState = GameState.readyToStart;
@@ -103,7 +97,7 @@ hexColor (String colorhexcode) {
                 }
               }),
               child: ColoredBox(
-                color: Colors.green,  // START подложка
+                color: _getButtonColor(),  // START подложка
                 child: SizedBox(
                   height: 200,
                   width: 200,
@@ -145,6 +139,7 @@ hexColor (String colorhexcode) {
     );
   }
 
+
   String _getButtonText() {
     switch (gameState) {
       case GameState.readyToStart:
@@ -183,6 +178,21 @@ hexColor (String colorhexcode) {
       });
     });
   }
+
+  Color _getButtonColor() {
+    switch (gameState) {
+      case GameState.readyToStart:
+        return const Color(0xFF40CA88);
+      case GameState.waiting:
+        return const Color(0xFFE0982D);
+      case GameState.canBeStopped:
+        return const Color(0xFFE02D47);
+
+    }
+
+
+  }
 }
+
 
 enum GameState { readyToStart, waiting, canBeStopped}
