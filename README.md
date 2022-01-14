@@ -1,6 +1,10 @@
-# flutter_push
+# Flutter Push Project 1
 
-A new Flutter project.
+The developed application will allow you to measure the reaction speed of pressing a button on the screen.
+
+![result_single_1621974373543](https://user-images.githubusercontent.com/95691597/149560324-0a4fdf25-2c63-4cbd-93eb-c1500c794b74.gif)
+
+
 
 ## Getting Started
 
@@ -14,3 +18,4 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+![result_single_1621974373543](https://user-images.githubusercontent.com/95691597/149560324-0a4fdf25-2c63-4cbd-93eb-c1500c794b74.gif)
